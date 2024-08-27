@@ -6,10 +6,10 @@ public class Test : MonoBehaviour
 {
 
     private int x = 5;
-    private float g = 6;
+    private float g = 6f;
     private string Yeet = "Flying";
     public string Screw = "Sheep";
-    int SkalFaktor = 1;
+    float SkalFaktor = 0.1f;
 
     
     // Start is called before the first frame update
@@ -21,8 +21,8 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SkalFaktor = SkalFaktor + 1;
-        transform.Rotate(1, 1, 0);
+        SkalFaktor = SkalFaktor + 0.1f;
+        //transform.Rotate(1, 1, 0);
         transform.localScale = new Vector3(SkalFaktor, SkalFaktor, SkalFaktor);
     }
 
