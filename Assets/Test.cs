@@ -5,7 +5,7 @@ using UnityEngine;
 public class Test : MonoBehaviour
 {
 
-    private int x = 5;
+    [SerializeField] private int x = 5;
     private float g = 6f;
     private string Yeet = "Flying";
     public string Screw = "Sheep";
@@ -21,13 +21,15 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SkalFaktor = SkalFaktor + 0.1f;
+        SkalFaktor = SkalFaktor + 0.1f * Time.deltaTime;
         //transform.Rotate(1, 1, 0);
         transform.localScale = new Vector3(SkalFaktor, SkalFaktor, SkalFaktor);
+        //transform.position =
+        //transform.localPosition = new Vector3();
     }
 
-    void RotateObject(int x)
-    {
+    //void RotateObject(int x)
+    //{
 
-    }
+    //}
 }
